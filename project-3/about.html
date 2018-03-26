@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="./icons/sphere.png">
+</head>
+<link rel="stylesheet" href="./css/style.css">
+<style type="text/css">
+/*
+Table Page
+*/
+table{
+	background-color:#fff;
+	width:100%;
+}
+table, th, td{border-collapse:collapse;}
+th, td{
+	padding:15px;
+	font-size:100%;
+}
+thead{background-color:#eee;}
+tbody.active{background-color:#ccc;}
+tbody:hover:not(.active){background-color:#ccc;}
+</style>
+
+<body>
+<div class="banner">
+	<img src="./icons/globe.gif" class="avatar-logo">
+	<span class="left-text">Jamorabon</span>
+</div><!-- .banner -->
+
+<div id="wrap">
+<ul class="top-navigation">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="about.html">About</a></li>
+	<li><a href="contact.html">Contact</a></li>
+	<li class="right-link"><a href="login.html">Login</a></li>
+</ul><!-- .top-navigation -->
+
+<div id="main">
+<div class="row">
+
+	<div class="col-3 col-m-3">
+	<div id="page">
+		<div class="header">
+			<h2>Sample</h2>
+		</div><!-- #header -->
+		<div id="content">
+			<h2>The quick brown fox jumps over the lazy dog.</h2>
+			<h4>The quick brown fox jumps over the lazy dog.</h4>
+			<p>The quick brown fox jumps over the lazy dog.</p>
+		</div><!-- #content -->
+	</div><!-- #page -->
+	</div>
+
+	<div class="col-9 col-m-12">
+	<div id="page">
+		<div class="header">
+			<h2>Sample</h2>
+		</div><!-- #header -->
+
+		<div id="content">
+			<input type="search" id="search-input" name="" placeholder="Search">
+		<div style="overflow:scroll;">
+			<table>
+			<thead>
+				<tr>
+					<th>Sample</th>
+					<th>Sample</th>
+					<th>Sample</th>
+					<th>Sample</th>
+					<th>Sample</th>
+					<th colspan="2">Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr align="center">
+					<td>Sample</td>
+					<td>Sample</td>
+					<td>Sample</td>
+					<td>Sample</td>
+					<td>Sample</td>
+					<td>
+						<a href="" id="action-button" onclick="return confirm('Are you sure want Edit?')">Edit</a>
+					</td>
+					<td>
+						<a href="" id="action-button" onclick="return confirm('Are you sure want Delete?')">Delete</a>
+					</td>
+				</tr>
+			</tbody>
+			</table>
+		</div>
+		</div><!-- #content -->
+	</div>
+
+</div><!-- .row -->
+</div><!-- #main -->
+
+<div class="footer">
+	<p>Copyright &copy; 2016 Jamorabon.&nbsp;All rights reserved.</p>
+</div><!-- .footer -->
+</div><!-- #wrap -->
+
+</body>
+</html>

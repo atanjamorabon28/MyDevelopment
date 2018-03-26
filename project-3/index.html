@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="./icons/sphere.png">
+</head>
+<link rel="stylesheet" href="./css/style.css">
+
+<body>
+<div class="banner">
+	<img src="./icons/globe.gif" class="avatar-logo">
+	<span class="left-text">Jamorabon</span>
+</div><!-- .banner -->
+
+<div id="wrap">
+<ul class="top-navigation">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="about.html">About</a></li>
+	<li><a href="contact.html">Contact</a></li>
+	<li class="right-link"><a href="#" id="myConfirm">Logout</a></li>
+	<li class="right-link"><a href="login.html">Login</a></li>
+</ul><!-- .top-navigation -->
+
+<div id="myAlert" class="modal">
+<span class="exit" id="close">&times;</span>
+	<div class="modal-content">
+		<div class="modal-header">
+			<h2>Are you sure want Logout?</h2>
+		</div>
+		<div class="modal-body">
+				<a href="#"><button style="float:left; margin-top:55px;" id="confirm-button">Yes</button></a>
+				<button style="float:right; margin-top:55px;" class="close" id="confirm-button">No</button>
+		</div>
+	</div><!-- .modal-content -->
+</div><!-- .modal -->
+<!-- Pop-up Modal Queries -->
+<script type="text/javascript">
+var modal = document.getElementById("myAlert");
+var a = document.getElementById("myConfirm");
+
+var span = document.getElementsByClassName("exit")[0];
+var button = document.getElementsByClassName("close")[0];
+
+a.onclick = function(){
+    modal.style.display = "block";
+}
+span.onclick = function(){
+    modal.style.display = "none";
+}
+button.onclick = function(){
+    modal.style.display = "none";
+}
+window.onclick = function(event){
+    if (event.target == modal){
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<div id="main">
+<div class="row">
+
+	<div class="col-3 col-m-3">
+	<div id="page">
+		<div class="header">
+			<h2>Sample</h2>
+		</div><!-- #header -->
+		<div id="content">
+			<form action="" method="POST">
+			<label class="text-label">Name:</label></br>
+				<input type="text" id="text-input" name="" placeholder="Enter your Name" required />
+			</br>
+			<label class="text-label">Comments:</label></br>
+				<textarea id="text-area" name="" placeholder="Enter your Comments" required /></textarea>
+				</br>
+				<input type="submit" id="submit-button" name="" value="Send">
+			</form>
+		</div><!-- #content -->
+	</div><!-- #page -->
+	</div>
+
+	<div class="col-6 col-m-9">
+	<div class="section-page">
+		<div class="header">
+			<h2>Comments</h2>
+		</div><!-- #header -->
+		<table>
+		<tr><td id="border-align">
+			<img src="./icons/user.png" class="avatar-image">
+			<span id="text-user">Sample</span></br>
+			</br><span id="text-reply">The quick brown fox jumps over the lazy dog.</span>
+				<input type="submit" value="Reply" id="reply-button">
+		</td></tr>
+		<tr><td id="border-align">
+			<img src="./icons/user.png" class="avatar-image">
+			<span id="text-user">Sample</span></br>
+			</br><span id="text-reply">The quick brown fox jumps over the lazy dog.</span>
+				<input type="submit" value="Reply" id="reply-button">
+		</td></tr>
+		<tr><td id="border-align">
+			<img src="./icons/user.png" class="avatar-image">
+			<span id="text-user">Sample</span></br>
+			</br><span id="text-reply">The quick brown fox jumps over the lazy dog.</span>
+				<input type="submit" value="Reply" id="reply-button">
+		</td></tr>
+		<tr><td id="border-align">
+			<img src="./icons/user.png" class="avatar-image">
+			<span id="text-user">Sample</span></br>
+			</br><span id="text-reply">The quick brown fox jumps over the lazy dog.</span>
+				<input type="submit" value="Reply" id="reply-button">
+		</td></tr>
+		</table>
+	</div><!-- .section-page -->
+	</div>
+	
+	<div class="col-3 col-m-12">
+	<div id="page">
+		<div class="header">
+			<h2>Sample</h2>
+		</div><!-- #header -->
+		<div id="content">
+		<input type="search" id="search-input" name="" placeholder="Search"></br>
+			<h2>The quick brown fox jumps over the lazy dog.</h2>
+			<h4>The quick brown fox jumps over the lazy dog.</h4>
+			<p>The quick brown fox jumps over the lazy dog.</p>
+		</div><!-- #content -->
+	</div><!-- #page -->
+	</div>
+
+</div><!-- .row -->
+</div><!-- #main -->
+
+<div class="footer">
+	<p>Copyright &copy; 2016 Jamorabon.&nbsp;All rights reserved.</p>
+</div><!-- .footer -->
+</div><!-- #wrap -->
+
+</body>
+</html>
